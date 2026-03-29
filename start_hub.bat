@@ -1,0 +1,9 @@
+@echo off
+setlocal
+cd /d %~dp0
+echo [1/3] Starting hospital-Omni-V1 Premium AI Hub...
+echo [2/3] Activating Virtual Environment...
+call venv\Scripts\activate
+echo [3/3] Launching Localhost UI (http://localhost:7860)...
+python app.py
+pause
